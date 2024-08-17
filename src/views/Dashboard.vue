@@ -44,6 +44,12 @@
         </button>
       </div>
     </div>
+    <section class="mt-12">
+      <ServiceAreaMap />
+    </section>
+    <section class="mt-12">
+      <Email />
+    </section>
   </div>
 
   <div
@@ -64,6 +70,9 @@
 </template>
 
 <script>
+import Email from '@/components/Email.vue'
+import ServiceAreaMap from '@/components/ServiceAreaMap.vue'
+
 export default {
   data() {
     return {
@@ -149,6 +158,10 @@ export default {
       ],
       selectedService: null
     }
+  },
+  components: {
+    ServiceAreaMap,
+    Email
   },
   methods: {
     openModal(service) {

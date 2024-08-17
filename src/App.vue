@@ -6,10 +6,10 @@ import FixedFooter from './components/FixedFooter.vue'
 
 <template>
   <DashboardHeader />
-  <main class="p-4 mb-16">
+  <main class="p-4 overflow-x-hidden bg-gray-600">
     <RouterView />
   </main>
   <FixedFooter
-    class="fixed bottom-0 left-0 w-full bg-red-500 text-white text-center p-2 shadow-md"
+    class="relative sz-50 bottom-0 left-0 w-full bg-red-500 text-white text-center p-2 shadow-md"
   />
 </template>
