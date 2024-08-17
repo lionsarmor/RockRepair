@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg flex">
+  <div class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg flex flex-col md:flex-row">
     <!-- Contact Form on the Left -->
-    <div class="w-1/2 pr-6">
+    <div class="w-full md:w-1/2 md:pr-6">
       <h2 class="text-2xl font-bold mb-6 text-center title">Contact Us</h2>
       <form action="https://formspree.io/f/xovalojl" method="POST" class="space-y-4">
         <div>
@@ -64,7 +64,7 @@
     </div>
 
     <!-- Mission Statement on the Right with Fading Effect -->
-    <div class="w-1/2 pl-6 flex items-center">
+    <div class="w-full md:w-1/2 md:pl-6 mt-8 md:mt-0 flex items-center">
       <div class="text-lg text-gray-700 opacity-0 transition-opacity duration-1000 fade-in">
         <h3 class="text-xl font-bold mb-4">Our Mission</h3>
         <p>
