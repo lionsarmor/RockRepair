@@ -160,10 +160,10 @@ export default {
         },
         {
           id: 10,
-          title: 'Onsite Diagnosis',
-          shortDescription: 'On-site diagnosis and repair services.',
+          title: 'Onsite Diagnostic',
+          shortDescription: 'On-site diagnostic and repair services.',
           fullDescription:
-            'Our onsite diagnosis services ensure quick identification and resolution of technical issues. We come to your location to diagnose the problem, offering a detailed assessment and immediate repair options to get you back on track quickly. Diagnosis services start at $120, waived if repairs are conducted on-site.',
+            'Our onsite diagnostic services ensure quick identification and resolution of technical issues. We come to your location to diagnose the problem, offering a detailed assessment and immediate repair options to get you back on track quickly. Diagnosis services start at $120, waived if repairs are conducted on-site.',
           image: diagImage
         }
       ],
