@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest",
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
@@ -20,6 +19,7 @@
     "konva": "^9.3.14",
     "leaflet": "^1.9.4",
     "pinia": "^2.1.7",
+    "vite": "^5.3.1",
     "tesseract.js": "^5.1.0",
     "vue": "^3.4.29",
     "vue-konva": "^3.0.5",
@@ -40,7 +40,6 @@
     "prettier": "^3.2.5",
     "start-server-and-test": "^2.0.4",
     "tailwindcss": "^3.4.9",
-    "vite": "^5.3.1",
     "vite-plugin-commonjs": "^0.10.1",
     "vitest": "^1.6.0"
   },
