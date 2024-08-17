@@ -6,9 +6,9 @@
     </div>
 
     <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 items-center">
-      <a href="tel:13072122648" class="text-xl font-bold text-black title">307-212-2648</a>
+      <a href="tel:13072122648" class="text-lg font-bold text-black title">307-212-2648</a>
       <a><span style="font-size: 2rem">•</span></a>
-      <a href="mailto:rockrepair@protonmail.com" class="text-xl font-bold text-black title"
+      <a href="mailto:rockrepair@protonmail.com" class="text-lg font-bold text-black title"
         >rockrepair@protonmail.com</a
       >
     </nav>
