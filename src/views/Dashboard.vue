@@ -12,7 +12,7 @@
         </p>
         <button
           @click="openModal(customSoftwareService)"
-          class="mt-4 bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600"
+          class="mt-4 bg-green-500 text-white py-2 px-6 rounded hover:bg-green-600"
         >
           Learn More
         </button>
@@ -28,9 +28,9 @@
         <div>
           <div class="mb-4">
             <img
-              src="@/assets/images/placeholder.png"
-              alt="Service Image"
-              class="w-full h-32 object-cover bg-black rounded"
+              :src="service.image"
+              :alt="service.title"
+              class="w-full h-32 object-cover rounded"
             />
           </div>
           <h2 class="text-lg font-semibold mb-2">{{ service.title }}</h2>
@@ -38,7 +38,7 @@
         </div>
         <button
           @click="openModal(service)"
-          class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+          class="mt-4 bg-red-300 text-white py-2 px-4 rounded hover:bg-red-600"
         >
           Learn More
         </button>
@@ -79,63 +79,72 @@ export default {
           title: 'Computer Repair',
           shortDescription: 'Fast and reliable computer repairs.',
           fullDescription:
-            'We offer comprehensive computer repair services for all types of systems, including desktops, laptops, and servers. Whether it’s hardware issues, software problems, or data recovery, our team ensures your computer is up and running as quickly as possible. Pricing starts at $100 per repair.'
+            'We offer comprehensive computer repair services for all types of systems, including desktops, laptops, and servers. Whether it’s hardware issues, software problems, or data recovery, our team ensures your computer is up and running as quickly as possible. Pricing starts at $100 per repair.',
+          image: '/src/assets/images/computer.jpeg'
         },
         {
           id: 2,
           title: 'Phone Repair',
           shortDescription: 'Expert phone repair services.',
           fullDescription:
-            'From screen replacements to battery issues, we handle all phone repairs with care and precision. Our technicians are skilled in repairing a wide range of smartphones, ensuring your device functions like new. Screen replacements start at $100.'
+            'From screen replacements to battery issues, we handle all phone repairs with care and precision. Our technicians are skilled in repairing a wide range of smartphones, ensuring your device functions like new. Screen replacements start at $100.',
+          image: '/src/assets/images/phone.jpeg'
         },
         {
           id: 3,
           title: 'Gaming System Repair',
           shortDescription: 'Get your gaming system back in action.',
           fullDescription:
-            'We specialize in repairing gaming consoles, including PlayStation, Xbox, and Nintendo systems. Whether you’re facing hardware failures, software glitches, or connectivity issues, we provide the necessary repairs to get you back in the game. Pricing starts at $120 per repair.'
+            'We specialize in repairing gaming consoles, including PlayStation, Xbox, and Nintendo systems. Whether you’re facing hardware failures, software glitches, or connectivity issues, we provide the necessary repairs to get you back in the game. Pricing starts at $120 per repair.',
+          image: '/src/assets/images/game.jpeg'
         },
         {
           id: 4,
           title: 'Server Maintenance',
           shortDescription: 'Ensure your servers are running smoothly.',
           fullDescription:
-            'Our server maintenance services keep your servers optimized and secure. We provide regular updates, performance checks, and security enhancements to ensure your business operations are uninterrupted. Monthly maintenance plans start at $400 per server.'
+            'Our server maintenance services keep your servers optimized and secure. We provide regular updates, performance checks, and security enhancements to ensure your business operations are uninterrupted. Monthly maintenance plans start at $400 per server.',
+          image: '/src/assets/images/server.jpg'
         },
         {
           id: 5,
           title: 'Printer Repair',
           shortDescription: 'Efficient printer repair services.',
           fullDescription:
-            'We fix all types of printers, from small desktop models to large office machines. Our services include troubleshooting, part replacements, and cleaning, ensuring your printers perform efficiently and reliably. Pricing starts at $120 per repair.'
+            'We fix all types of printers, from small desktop models to large office machines. Our services include troubleshooting, part replacements, and cleaning, ensuring your printers perform efficiently and reliably. Pricing starts at $120 per repair.',
+          image: '/src/assets/images/printer.jpg'
         },
         {
           id: 6,
           title: 'POS System Setup',
           shortDescription: 'Professional POS system installation.',
           fullDescription:
-            'We provide setup and support for POS systems, ensuring seamless operation for your business. Our services include installation, configuration, and ongoing maintenance to help you manage transactions smoothly and efficiently. Setup fee starts at $400 per system.'
+            'We provide setup and support for POS systems, ensuring seamless operation for your business. Our services include installation, configuration, and ongoing maintenance to help you manage transactions smoothly and efficiently. Setup fee starts at $400 per system.',
+          image: '/src/assets/images/pos.jpg'
         },
         {
           id: 8,
           title: 'Network Services',
           shortDescription: 'Comprehensive network setup and maintenance.',
           fullDescription:
-            'Our network services cover everything from running CAT5 and CAT6 cables to setting up office computers, TVs, and network devices. We ensure your entire network is configured for optimal performance, whether it’s for a small office or a larger corporate environment. Pricing starts at $150 per cable run and $600 for full network setup.'
+            'Our network services cover everything from running CAT5 and CAT6 cables to setting up office computers, TVs, and network devices. We ensure your entire network is configured for optimal performance, whether it’s for a small office or a larger corporate environment. Pricing starts at $150 per cable run and $600 for full network setup.',
+          image: '/src/assets/images/network.jpg'
         },
         {
           id: 9,
           title: 'Onsite Repair',
           shortDescription: 'On-site diagnosis and repair services.',
           fullDescription:
-            'We offer on-site repair services, bringing our expertise directly to your location. Whether you have a critical system down or need urgent repairs, our technicians are equipped to handle the situation on-site, minimizing your downtime. On-site repairs start at $150 per hour.'
+            'We offer on-site repair services, bringing our expertise directly to your location. Whether you have a critical system down or need urgent repairs, our technicians are equipped to handle the situation on-site, minimizing your downtime. On-site repairs start at $150 per hour.',
+          image: '/src/assets/images/onsite.jpg'
         },
         {
           id: 10,
           title: 'Onsite Diagnosis',
           shortDescription: 'On-site diagnosis and repair services.',
           fullDescription:
-            'Our onsite diagnosis services ensure quick identification and resolution of technical issues. We come to your location to diagnose the problem, offering a detailed assessment and immediate repair options to get you back on track quickly. Diagnosis services start at $120, waived if repairs are conducted on-site.'
+            'Our onsite diagnosis services ensure quick identification and resolution of technical issues. We come to your location to diagnose the problem, offering a detailed assessment and immediate repair options to get you back on track quickly. Diagnosis services start at $120, waived if repairs are conducted on-site.',
+          image: '/src/assets/images/diag.jpg'
         }
       ],
       selectedService: null
@@ -153,6 +162,14 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  /* You can further style the font to make it more "robotic" */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #1f2937; /* Darker text color */
+}
+
 .bg-light-blue-50 {
   background-color: #f0f8ff; /* Light blue background */
 }
