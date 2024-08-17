@@ -73,6 +73,17 @@
 import Email from '@/components/Email.vue'
 import ServiceAreaMap from '@/components/ServiceAreaMap.vue'
 
+// Import images
+import computerImage from '@/assets/images/computer.jpeg'
+import phoneImage from '@/assets/images/phone.jpeg'
+import gameImage from '@/assets/images/game.jpeg'
+import serverImage from '@/assets/images/server.jpg'
+import printerImage from '@/assets/images/printer.jpg'
+import posImage from '@/assets/images/pos.jpg'
+import networkImage from '@/assets/images/network.jpg'
+import onsiteImage from '@/assets/images/onsite.jpg'
+import diagImage from '@/assets/images/diag.jpg'
+
 export default {
   data() {
     return {
@@ -89,7 +100,7 @@ export default {
           shortDescription: 'Fast and reliable computer repairs.',
           fullDescription:
             'We offer comprehensive computer repair services for all types of systems, including desktops, laptops, and servers. Whether it’s hardware issues, software problems, or data recovery, our team ensures your computer is up and running as quickly as possible. Pricing starts at $100 per repair.',
-          image: '/src/assets/images/computer.jpeg'
+          image: computerImage
         },
         {
           id: 2,
@@ -97,7 +108,7 @@ export default {
           shortDescription: 'Expert phone repair services.',
           fullDescription:
             'From screen replacements to battery issues, we handle all phone repairs with care and precision. Our technicians are skilled in repairing a wide range of smartphones, ensuring your device functions like new. Screen replacements start at $100.',
-          image: '/src/assets/images/phone.jpeg'
+          image: phoneImage
         },
         {
           id: 3,
@@ -105,7 +116,7 @@ export default {
           shortDescription: 'Get your gaming system back in action.',
           fullDescription:
             'We specialize in repairing gaming consoles, including PlayStation, Xbox, and Nintendo systems. Whether you’re facing hardware failures, software glitches, or connectivity issues, we provide the necessary repairs to get you back in the game. Pricing starts at $120 per repair.',
-          image: '/src/assets/images/game.jpeg'
+          image: gameImage
         },
         {
           id: 4,
@@ -113,7 +124,7 @@ export default {
           shortDescription: 'Ensure your servers are running smoothly.',
           fullDescription:
             'Our server maintenance services keep your servers optimized and secure. We provide regular updates, performance checks, and security enhancements to ensure your business operations are uninterrupted. Monthly maintenance plans start at $400 per server.',
-          image: '/src/assets/images/server.jpg'
+          image: serverImage
         },
         {
           id: 5,
@@ -121,7 +132,7 @@ export default {
           shortDescription: 'Efficient printer repair services.',
           fullDescription:
             'We fix all types of printers, from small desktop models to large office machines. Our services include troubleshooting, part replacements, and cleaning, ensuring your printers perform efficiently and reliably. Pricing starts at $120 per repair.',
-          image: '/src/assets/images/printer.jpg'
+          image: printerImage
         },
         {
           id: 6,
@@ -129,7 +140,7 @@ export default {
           shortDescription: 'Professional POS system installation.',
           fullDescription:
             'We provide setup and support for POS systems, ensuring seamless operation for your business. Our services include installation, configuration, and ongoing maintenance to help you manage transactions smoothly and efficiently. Setup fee starts at $400 per system.',
-          image: '/src/assets/images/pos.jpg'
+          image: posImage
         },
         {
           id: 8,
@@ -137,7 +148,7 @@ export default {
           shortDescription: 'Comprehensive network setup and maintenance.',
           fullDescription:
             'Our network services cover everything from running CAT5 and CAT6 cables to setting up office computers, TVs, and network devices. We ensure your entire network is configured for optimal performance, whether it’s for a small office or a larger corporate environment. Pricing starts at $150 per cable run and $600 for full network setup.',
-          image: '/src/assets/images/network.jpg'
+          image: networkImage
         },
         {
           id: 9,
@@ -145,7 +156,7 @@ export default {
           shortDescription: 'On-site diagnosis and repair services.',
           fullDescription:
             'We offer on-site repair services, bringing our expertise directly to your location. Whether you have a critical system down or need urgent repairs, our technicians are equipped to handle the situation on-site, minimizing your downtime. On-site repairs start at $150 per hour.',
-          image: '/src/assets/images/onsite.jpg'
+          image: onsiteImage
         },
         {
           id: 10,
@@ -153,7 +164,7 @@ export default {
           shortDescription: 'On-site diagnosis and repair services.',
           fullDescription:
             'Our onsite diagnosis services ensure quick identification and resolution of technical issues. We come to your location to diagnose the problem, offering a detailed assessment and immediate repair options to get you back on track quickly. Diagnosis services start at $120, waived if repairs are conducted on-site.',
-          image: '/src/assets/images/diag.jpg'
+          image: diagImage
         }
       ],
       selectedService: null
@@ -177,14 +188,13 @@ export default {
 <style scoped>
 h2 {
   font-family: 'Orbitron', sans-serif;
-  /* You can further style the font to make it more "robotic" */
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #1f2937; /* Darker text color */
+  color: #1f2937;
 }
 
 .bg-light-blue-50 {
-  background-color: #f0f8ff; /* Light blue background */
+  background-color: #f0f8ff;
 }
 
 .shadow-lg {
