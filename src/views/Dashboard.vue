@@ -83,7 +83,7 @@ import posImage from '@/assets/images/pos.jpg'
 import networkImage from '@/assets/images/network.jpg'
 import onsiteImage from '@/assets/images/onsite.jpg'
 import diagImage from '@/assets/images/diag.jpg'
-import telecomImage from '@/assets/images/telecom.jpg'
+import telecomImage from '@/assets/images/telecom.png'
 
 export default {
   data() {
@@ -173,7 +173,7 @@ export default {
           title: 'Field Services',
           shortDescription: 'Onsite technical support and repair services.',
           fullDescription:
-            'Our Field Services team provides expert onsite technical support, delivering solutions directly to your location. Whether you need critical system maintenance, network troubleshooting, or urgent repairs, our skilled technicians are equipped to handle the situation efficiently on-site, minimizing your downtime. Field Services are available starting at $150 per hour.',
+            'Our Field Services team provides expert onsite technical support, delivering solutions directly to your location. Whether you need critical system maintenance, network troubleshooting, cable runs, or urgent repairs, our skilled technicians are equipped to handle the situation efficiently on-site, minimizing your downtime. Field Services are available starting at $150 per hour.',
           image: telecomImage
         }
       ],
