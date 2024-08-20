@@ -42,8 +42,7 @@ export default {
 }
 
 .logo {
-  height: 7vh;
-  max-height: 50px;
+  height: 6vh;
   object-fit: contain;
 }
 
