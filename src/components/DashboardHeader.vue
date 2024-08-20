@@ -1,14 +1,22 @@
 <template>
-  <header class="bg-red-400 text-black p-4 flex flex-col md:flex-row items-center justify-between">
+  <header
+    class="bg-gradient-to-r from-red-400 to-red-600 text-white p-4 flex flex-col md:flex-row items-center justify-between shadow-lg"
+  >
     <div class="flex items-center space-x-4 mb-2 md:mb-0">
       <img src="@/assets/images/logo.png" alt="Logo" class="logo" />
-      <h1 class="title text-xl font-semibold">Rock Repair & IT solutions</h1>
+      <h1 class="title text-2xl font-bold tracking-wide">Rock Repair & IT Solutions</h1>
     </div>
 
     <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 items-center">
-      <a href="tel:13072122648" class="text-lg font-bold text-black title">307-212-2648</a>
-      <a><span style="font-size: 2rem">•</span></a>
-      <a href="mailto:rockrepair@protonmail.com" class="text-lg font-bold text-black title"
+      <a
+        href="tel:13072122648"
+        class="text-lg font-semibold hover:text-yellow-300 transition-colors"
+        >307-212-2648</a
+      >
+      <span class="hidden md:block" style="font-size: 2rem">•</span>
+      <a
+        href="mailto:rockrepair@protonmail.com"
+        class="text-lg font-semibold hover:text-yellow-300 transition-colors"
         >rockrepair@protonmail.com</a
       >
     </nav>
@@ -21,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @font-face {
   font-family: 'Orbitron';
   src: url('@/assets/fonts/Orbitron.ttf') format('truetype');
@@ -29,12 +37,28 @@ export default {
 
 .title {
   font-family: 'Orbitron', sans-serif;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: #1f2937; /* Darker text color */
 }
 
 .logo {
   height: 7vh;
+  max-height: 50px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 5vh;
+    max-height: 40px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  header {
+    padding: 2rem 1.5rem;
+  }
 }
 </style>
