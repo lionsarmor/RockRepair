@@ -89,12 +89,20 @@ export default {
   data() {
     return {
       customSoftwareService: {
-        id: 7,
+        id: 11,
         title: 'Custom Software Solutions & Web App Design',
         fullDescription:
           'We specialize in creating custom software tailored to your specific business requirements. Whether you need full-stack web development, mobile app development, or custom APIs, our team has the expertise to deliver high-quality, efficient solutions that drive your business forward. Our services also include web app design that prioritizes user experience and functionality. Pricing starts at $5,000 per project.'
       },
       otherServices: [
+        {
+          id: 7,
+          title: 'Field Services',
+          shortDescription: 'Onsite technical support and repair services.',
+          fullDescription:
+            'Our Field Services team provides expert onsite technical support, delivering solutions directly to your location. Whether you need critical system maintenance, network troubleshooting, cable runs, or urgent repairs, our skilled technicians are equipped to handle the situation efficiently on-site, minimizing your downtime. Field Services are available starting at $150 per hour.',
+          image: telecomImage
+        },
         {
           id: 1,
           title: 'Computer Repair',
@@ -167,14 +175,6 @@ export default {
           fullDescription:
             'Our onsite diagnostic services ensure quick identification and resolution of technical issues. We come to your location to diagnose the problem, offering a detailed assessment and immediate repair options to get you back on track quickly. Diagnosis services start at $120, waived if repairs are conducted on-site.',
           image: diagImage
-        },
-        {
-          id: 11,
-          title: 'Field Services',
-          shortDescription: 'Onsite technical support and repair services.',
-          fullDescription:
-            'Our Field Services team provides expert onsite technical support, delivering solutions directly to your location. Whether you need critical system maintenance, network troubleshooting, cable runs, or urgent repairs, our skilled technicians are equipped to handle the situation efficiently on-site, minimizing your downtime. Field Services are available starting at $150 per hour.',
-          image: telecomImage
         }
       ],
       selectedService: null
