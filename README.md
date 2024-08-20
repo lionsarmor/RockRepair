@@ -55,3 +55,7 @@ npm run test:e2e
 ```sh
 npm run lint
 ```
+
+### ADDING DOMAIN TO HEROKU
+
+heroku domains:add rockrepair.pro --app rockrepair

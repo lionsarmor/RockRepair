@@ -83,6 +83,7 @@ import posImage from '@/assets/images/pos.jpg'
 import networkImage from '@/assets/images/network.jpg'
 import onsiteImage from '@/assets/images/onsite.jpg'
 import diagImage from '@/assets/images/diag.jpg'
+import telecomImage from '@/assets/images/telecom.jpg'
 
 export default {
   data() {
@@ -158,6 +159,7 @@ export default {
             'We offer on-site repair services, bringing our expertise directly to your location. Whether you have a critical system down or need urgent repairs, our technicians are equipped to handle the situation on-site, minimizing your downtime. On-site repairs start at $150 per hour.',
           image: onsiteImage
         },
+
         {
           id: 10,
           title: 'Onsite Diagnostic',
@@ -165,6 +167,14 @@ export default {
           fullDescription:
             'Our onsite diagnostic services ensure quick identification and resolution of technical issues. We come to your location to diagnose the problem, offering a detailed assessment and immediate repair options to get you back on track quickly. Diagnosis services start at $120, waived if repairs are conducted on-site.',
           image: diagImage
+        },
+        {
+          id: 11,
+          title: 'Field Services',
+          shortDescription: 'Onsite technical support and repair services.',
+          fullDescription:
+            'Our Field Services team provides expert onsite technical support, delivering solutions directly to your location. Whether you need critical system maintenance, network troubleshooting, or urgent repairs, our skilled technicians are equipped to handle the situation efficiently on-site, minimizing your downtime. Field Services are available starting at $150 per hour.',
+          image: telecomImage
         }
       ],
       selectedService: null
