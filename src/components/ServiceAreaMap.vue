@@ -2,7 +2,8 @@
   <LMap
     :zoom="zoom"
     :center="center"
-    style="height: 400px; width: 100%"
+    class="rounded-map"
+    style="height: 560px; width: 100%"
     :scrollWheelZoom="false"
     :doubleClickZoom="false"
     :dragging="false"
@@ -54,5 +55,8 @@ export default {
 </script>
 
 <style scoped>
-/* Add any additional styles here if needed */
+.rounded-map {
+  border-radius: 8px; /* Adjust the radius as needed */
+  overflow: hidden; /* Ensure the map content respects the border-radius */
+}
 </style>

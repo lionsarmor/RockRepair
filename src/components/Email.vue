@@ -1,8 +1,8 @@
 <template>
-  <div class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg flex flex-col md:flex-row">
-    <!-- Contact Form on the Left -->
-    <div class="w-full md:w-1/2 md:pr-6">
-      <h2 class="text-2xl font-bold mb-6 text-center title">Contact Us</h2>
+  <div class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+    <!-- Contact Form -->
+    <div class="w-full md:pr-6">
+      <h2 class="text-3xl font-bold mb-6 text-center title">Contact Us</h2>
       <form action="https://formspree.io/f/xovalojl" method="POST" class="space-y-4">
         <div>
           <label for="name" class="block text-gray-700">Name</label>
@@ -56,24 +56,11 @@
 
         <button
           type="submit"
-          class="w-full bg-red-400 text-white py-2 px-4 rounded hover:bg-red-600"
+          class="w-full bg-blue-400 text-white py-2 px-4 rounded hover:bg-blue-600"
         >
           Send Message
         </button>
       </form>
-    </div>
-
-    <!-- Mission Statement on the Right with Fading Effect -->
-    <div class="w-full md:w-1/2 md:pl-6 mt-8 md:mt-0 flex items-center">
-      <div class="text-lg text-gray-700 opacity-0 transition-opacity duration-1000 fade-in">
-        <h3 class="text-xl font-bold mb-4">Our Mission</h3>
-        <p>
-          At Rock Repair & IT Solutions, we are committed to providing exceptional service and
-          solutions that drive the success of our customers. Our mission is to deliver high-quality,
-          reliable, and efficient services that meet the unique needs of each client. We believe in
-          building lasting relationships through trust, integrity, and a dedication to excellence.
-        </p>
-      </div>
     </div>
   </div>
 </template>

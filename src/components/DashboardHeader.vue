@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-gradient-to-r from-red-400 to-red-600 text-white p-4 flex flex-col md:flex-row items-center justify-between shadow-lg"
+    class="bg-gradient-to-r from-blue-400 to-blue-600 text-white p-4 flex flex-col md:flex-row items-center justify-between shadow-lg"
   >
     <div class="flex items-center space-x-4 mb-2 md:mb-0">
       <img src="@/assets/images/logo.png" alt="Logo" class="logo" />

@@ -10,12 +10,6 @@
           development, API integration, and custom tools to optimize your workflow. Starting at
           $5,000 per project.
         </p>
-        <button
-          @click="openModal(customSoftwareService)"
-          class="mt-4 bg-green-500 text-white py-2 px-6 rounded hover:bg-green-600"
-        >
-          Learn More
-        </button>
       </div>
     </div>
 
@@ -23,33 +17,30 @@
       <div
         v-for="service in otherServices"
         :key="service.id"
-        class="bg-light-blue-50 border border-black shadow-lg p-6 rounded-lg h-80 flex flex-col justify-between"
+        class="service-card bg-light-blue-50 border border-black shadow-lg p-3 rounded-lg h-70 flex flex-col cursor-pointer transform transition-transform duration-300 hover:scale-105"
+        @click="openModal(service)"
       >
         <div>
-          <div class="mb-4">
-            <img
-              :src="service.image"
-              :alt="service.title"
-              class="w-full h-32 object-cover rounded"
-            />
-          </div>
-          <h2 class="text-lg font-semibold mb-2">{{ service.title }}</h2>
+          <img :src="service.image" :alt="service.title" class="w-full h-40 object-cover rounded" />
+          <h2 class="text-lg font-semibold my-4">{{ service.title }}</h2>
           <p class="text-sm text-gray-600">{{ service.shortDescription }}</p>
         </div>
-        <button
-          @click="openModal(service)"
-          class="mt-4 bg-red-300 text-white py-2 px-4 rounded hover:bg-red-600"
-        >
-          Learn More
-        </button>
       </div>
     </div>
-    <section class="mt-12">
-      <ServiceAreaMap />
-    </section>
-    <section class="mt-12">
-      <Email />
-    </section>
+
+    <div class="m-3">
+      <MissionStatement />
+    </div>
+
+    <!-- Flex container to hold the map and email form side by side -->
+    <div class="mt-12 flex flex-col md:flex-row gap-6">
+      <section class="flex-1">
+        <ServiceAreaMap />
+      </section>
+      <section class="flex-1">
+        <Email />
+      </section>
+    </div>
   </div>
 
   <div
@@ -72,6 +63,7 @@
 <script>
 import Email from '@/components/Email.vue'
 import ServiceAreaMap from '@/components/ServiceAreaMap.vue'
+import MissionStatement from '@/components/MissionStatement.vue'
 
 // Import images
 import computerImage from '@/assets/images/computer.jpeg'
@@ -182,7 +174,8 @@ export default {
   },
   components: {
     ServiceAreaMap,
-    Email
+    Email,
+    MissionStatement
   },
   methods: {
     openModal(service) {
@@ -196,6 +189,19 @@ export default {
 </script>
 
 <style scoped>
+.service-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
 h2 {
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 1.5px;
@@ -205,12 +211,6 @@ h2 {
 
 .bg-light-blue-50 {
   background-color: #f0f8ff;
-}
-
-.shadow-lg {
-  box-shadow:
-    0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .border-black {
