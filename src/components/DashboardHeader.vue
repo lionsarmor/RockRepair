@@ -15,9 +15,9 @@
       >
       <span class="hidden md:block" style="font-size: 2rem">•</span>
       <a
-        href="mailto:rockrepair@protonmail.com"
+        href="mailto:rockrepair@proton.me"
         class="text-lg font-semibold hover:text-yellow-300 transition-colors"
-        >rockrepair@protonmail.com</a
+        >Rockrepair@proton.me</a
       >
     </nav>
   </header>
