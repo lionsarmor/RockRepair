@@ -4,7 +4,7 @@
   >
     <div class="flex items-center space-x-4 mb-2 md:mb-0">
       <img src="@/assets/images/logo.png" alt="Logo" class="logo" />
-      <h1 class="title text-2xl font-bold tracking-wide">Rock Repair & IT Solutions</h1>
+      <h3 class="title text-lg font-bold tracking-wide">Rock Repair & IT Solutions</h3>
     </div>
 
     <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 items-center">
